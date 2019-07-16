@@ -37,8 +37,8 @@ export default {
       try {
         this.$genesis.get(url).then(r => {
           let data = r.data;
-          this.txCount = data.u[0].count + data.c[0].count;
-          this.totalReceived = data.u[0].value + data.c[0].value;
+          this.txCount = (data.u[0].count || 0) + data.c[0].count;
+          this.totalReceived = (data.u[0].value || 0) + data.c[0].value;
           this.tipped = true;
         });
       } catch (error) {
