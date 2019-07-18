@@ -46,7 +46,7 @@ export default {
       tipping: false,
       amounts: [600, 800, 1000, 2000, 5000, 8000, 10000],
       tipAmount: Satoshi(600),
-      msg: "TIP YOUR MOTHER IF YOU WANT TO TIP"
+      msg: "Bitcoin is the most efficient system, "
     };
   },
   components: {
